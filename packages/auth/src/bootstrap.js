@@ -25,6 +25,6 @@ export const mount = (element, { defaultHistory, initialPath, onNavigate }) => {
 };
 
 if (process.env.NODE_ENV === "development") {
-  const root = document.getElementById("_marketing-dev-root");
+  const root = document.getElementById("_auth-dev-root");
   if (root) mount(root, { defaultHistory: createBrowserHistory() });
 }
